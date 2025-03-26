@@ -1,0 +1,7 @@
+{
+  "name": "job-listings-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
