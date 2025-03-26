@@ -1,0 +1,213 @@
+.application-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.application-form {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group ion-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.form-group ion-input,
+.form-group ion-textarea {
+  --background: #f9fafb;
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+  --padding-top: 0.75rem;
+  --padding-bottom: 0.75rem;
+  --border-radius: 8px;
+  --border-color: #e5e7eb;
+  --border-width: 1px;
+  --border-style: solid;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+
+.form-group ion-input:focus,
+.form-group ion-textarea:focus {
+  --border-color: #6366f1;
+  --border-width: 2px;
+}
+
+.form-group ion-textarea {
+  min-height: 120px;
+}
+
+.upload-section {
+  margin: 2rem 0;
+}
+
+.upload-section ion-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.upload-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 2px dashed #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-resume:hover {
+  border-color: #6366f1;
+  background: #f5f6ff;
+}
+
+.upload-resume ion-icon {
+  font-size: 2.5rem;
+  color: #6366f1;
+  margin-bottom: 1rem;
+}
+
+.upload-resume h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.upload-resume p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.file-selected {
+  border-color: #6366f1;
+  background: #f5f6ff;
+}
+
+.file-selected h3 {
+  color: #6366f1;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.file-info ion-icon {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.file-info span {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.submit-button {
+  margin-top: 2rem;
+  width: 100%;
+  --background: #6366f1;
+  --background-hover: #4f46e5;
+  --border-radius: 8px;
+  --padding-top: 1rem;
+  --padding-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .application-form {
+    background: #1f2937;
+  }
+
+  .form-title {
+    color: #f9fafb;
+    border-bottom-color: #374151;
+  }
+
+  .form-group ion-label,
+  .upload-section ion-label {
+    color: #e5e7eb;
+  }
+
+  .form-group ion-input,
+  .form-group ion-textarea {
+    --background: #374151;
+    --border-color: #4b5563;
+    --color: #f9fafb;
+  }
+
+  .upload-resume {
+    background: #374151;
+    border-color: #4b5563;
+  }
+
+  .upload-resume:hover,
+  .file-selected {
+    border-color: #818cf8;
+    background: rgba(99, 102, 241, 0.1);
+  }
+
+  .upload-resume h3 {
+    color: #e5e7eb;
+  }
+
+  .file-selected h3 {
+    color: #818cf8;
+  }
+
+  .upload-resume p {
+    color: #9ca3af;
+  }
+
+  .file-info {
+    background: #1f2937;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .file-info span {
+    color: #e5e7eb;
+  }
+
+  .submit-button {
+    --background: #818cf8;
+    --background-hover: #6366f1;
+  }
+} 
